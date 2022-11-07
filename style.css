@@ -1,0 +1,76 @@
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 50;
+    overflow: hidden;
+    background-color: rgb(53, 64, 69);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ol li a {
+    display: block;
+    color: rgb(25, 17, 17);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  ol li a:hover {
+    background-color: rgb(244, 232, 232);
+  }
+  li a:hover {
+    background-color: #111;
+  }
+
+ 
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+  hi{
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #a7b388;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #b6b2b2c1;
+    padding: 50px;}
+
+.container:hover{
+        background-color: rgb(193, 176, 143);
+    }

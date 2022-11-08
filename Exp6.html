@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Javascript Variables</h1>");
+      document.write(
+        "This <strong>text</strong> is written using javascript<br>"
+      );
+      name = "Zaid";
+      surname = "Ansari";
+      document.write("My name is " + name + " " + surname);
+      document.write("<h1>Javascript Operators</h1>");
+      const x = 4;
+      const y = 5;
+      const z = y + x;
+      document.write("x = " + x + " y = " + y + "<br>z = x + y = " + z);
+      document.write("<h1>Javascript Conditionals</h1>");
+      const age = 17;
+      document.write("Age = " + age);
+      if (age >= 18) {
+        document.write("<br>You can drive");
+      } else {
+        document.write("<br>You cannot drive");
+      }
+      document.write("<h1>Javascript Loops</h1>");
+      for (i = 0; i <= 5; i++) {
+        document.write("Looped " + (i + 1) + " time<br>");
+      }
+      document.write("<h1>Javascript Functions</h1>");
+      function hello_world(name) {
+        document.write("Hello! Welcome " + name);
+      }
+      hello_world("Mohammad");
+      document.write("<h1>Javasript Events</h1>");
+    </script>
+    <button>Change Color</button>
+    <script>
+      const btn = document.querySelector("button");
+      function random(number) {
+        return Math.floor(Math.random() * (number + 1));
+      }
+      btn.addEventListener("click", () => {
+        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+        document.body.style.backgroundColor = rndCol;
+      });
+      document.write("<h1>Javascript Class and Objects</h1>");
+      class Car {
+        constructor(name, year) {
+          this.name = name;
+          this.year = year;
+        }
+      }
+      let mycar1 = new Car("Audi", 2022);
+      let mycar2 = new Car("BMW", 2021);
+      document.write(mycar1.name + " " + mycar1.year + "<br>");
+      document.write(mycar2.name + " " + mycar2.year);
+    </script>
+  </body>
+</html>
